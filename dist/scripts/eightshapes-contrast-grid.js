@@ -73,7 +73,7 @@ EightShapes.CodeSnippet = function() {
     }
 
     function setEventHandlers() {
-        var clipboard = new Clipboard('.es-code-snippet__copy-button');
+        var clipboard = new ClipboardJS('.es-code-snippet__copy-button');
         clipboard.on('success', function(e) {
             $(e.trigger).removeClass("es-code-snippet__copy-button--clicked");
             $(e.trigger).prop('offsetHeight');
